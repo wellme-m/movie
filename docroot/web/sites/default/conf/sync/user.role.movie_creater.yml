@@ -1,0 +1,9 @@
+uuid: 3b1af118-f6d2-473e-a92b-e3a3e58fd33f
+langcode: en
+status: true
+dependencies: {  }
+id: movie_creater
+label: 'Movie Creater'
+weight: 3
+is_admin: null
+permissions: {  }

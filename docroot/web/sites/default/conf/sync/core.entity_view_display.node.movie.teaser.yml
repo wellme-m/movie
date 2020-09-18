@@ -1,0 +1,65 @@
+uuid: 70cfb152-4d80-4ea4-a53e-6745ba729490
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.body
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_movie_director
+    - field.field.node.movie.field_movie_name
+    - field.field.node.movie.field_movie_photos
+    - field.field.node.movie.field_movie_video
+    - field.field.node.movie.field_production
+    - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_test
+    - node.type.movie
+  module:
+    - datetime
+    - text
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_genre:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_movie_name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_release_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+hidden:
+  field_movie_director: true
+  field_movie_photos: true
+  field_movie_video: true
+  field_production: true
+  field_test: true
+  links: true

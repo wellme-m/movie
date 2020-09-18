@@ -1,0 +1,23 @@
+uuid: c9f9961b-03a4-4bec-9e8a-082c159e27f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cover_photo
+    - paragraphs.paragraphs_type.photos
+id: paragraph.photos.field_cover_photo
+field_name: field_cover_photo
+entity_type: paragraph
+bundle: photos
+label: 'Cover Photo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,35 @@
+uuid: 123ed94f-cb55-427a-b8d9-feee02ba168f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photos.field_cover_photo
+    - field.field.paragraph.photos.field_movie_photo
+    - paragraphs.paragraphs_type.photos
+  module:
+    - image
+id: paragraph.photos.default
+targetEntityType: paragraph
+bundle: photos
+mode: default
+content:
+  field_cover_photo:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_movie_photo:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

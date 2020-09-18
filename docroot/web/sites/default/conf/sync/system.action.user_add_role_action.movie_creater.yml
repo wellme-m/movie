@@ -1,0 +1,14 @@
+uuid: 926c1c2d-554a-43e4-ac2e-c3efa1fad91b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movie_creater
+  module:
+    - user
+id: user_add_role_action.movie_creater
+label: 'Add the Movie Creater role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: movie_creater

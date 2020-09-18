@@ -1,0 +1,35 @@
+uuid: c4a0bdb7-e5b9-4f64-aa60-bc892679666c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cast.body
+    - field.field.node.cast.field_name
+    - field.field.node.cast.field_photo
+    - node.type.cast
+  module:
+    - image
+    - user
+id: node.cast.teaser
+targetEntityType: node
+bundle: cast
+mode: teaser
+content:
+  field_photo:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_name: true

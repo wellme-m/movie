@@ -1,0 +1,30 @@
+uuid: 4573f18e-9de5-4894-82b1-99cc1b7a11d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_movie_photo
+field_name: field_movie_photo
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

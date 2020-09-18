@@ -1,0 +1,10 @@
+uuid: 01171365-5a05-4f5d-b8d2-199bca5cde4f
+langcode: en
+status: true
+dependencies: {  }
+id: photos
+label: Photos
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
